@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yuk Yuk!!</title>
+    <title>Joke-O-Rama</title>
     <style>
         .joke-card {
             width: 300px;
@@ -18,15 +18,21 @@
         .joke-card p {
             font-size: 16px;
         }
+        .container {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div class="joke-card">
-        <h2>Here's a little joke for you:</h2>
-        <p>{{ joke }}</p>
+    <div class="container">
+        <h1>Hope this makes you smile:</h1>
+        <div class="joke-card">
+            <p>{{ joke }}</p>
+        </div>
         <form method="POST">
             <button type="submit">Get New Joke</button>
         </form>
     </div>
 </body>
 </html>
+
